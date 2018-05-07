@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+body {
+  background-color:;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  background-color: black;
+  align-items: center;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+h1 {
+  color: gray;
+}
+
+.login-nav a {
+  padding: 15px;
+  text-decoration: underline;
+  color: gray;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 25px;
+}
+
+.main-nav a {
+  background-color: black;
+  text-decoration: none;
+  color: gray;
+  transition: transform 0.9s;
+  width: 230px;
+  height: 50px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.main-nav a:hover{
+    transform: scale(0.9);
+}
+
+.banner img {
+	width: 100%;
+  margin-top: 25px;
+  border: solid;
+}
+
+.productos {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.categorias {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 360px;
+  background-color: black;
+}
+
+.categorias h3 {
+  text-align: center;
+  color: gray;
+}
+
+.categorias li {
+  list-style: none;
+  margin-left: 10px;
+  padding: 15px;
+}
+
+.categorias a {
+  text-decoration: none;
+  color: white;
+}
+
+.destacados {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+}
+
+.promo {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 300px;
+  align-items: center;
+  border: solid;
+}
+
+.promo:first-child {
+  margin-left: 20px;
+}
+
+.promo img {
+  width: 240px;
+}
+
+.novedades {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 25px;
+}
+
+.nuevo {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 300px;
+  align-items: center;
+  border: solid;
+}
+
+.nuevo img {
+  width: 240px;
+}
+
+footer {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-right: 70px;
+  padding-left: 70px;
+  background-color: black;
+}
+
+.copyright p {
+  color: gray;
+}
+
+.social_box {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.social_item img {
+  width: 24px;
+  margin: 10px;
+}
