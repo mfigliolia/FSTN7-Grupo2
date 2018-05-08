@@ -1,0 +1,78 @@
+
+Body{
+margin: 0;
+padding: 0;
+}
+header {
+  margin: 0;
+  padding: 0;
+}
+.logo{
+  margin:0;
+  float: left;
+  border-top: 50px;
+  border-left: 5px;
+}
+.form{
+  float: right;
+  margin-top: 3px;
+}
+ .hea{
+  border-top: 5px;
+  border-bottom: 5px;
+  border-style: solid;
+  border-color:grey;
+}
+ header p{
+   padding-top: 5px;
+   border-color: grey;
+   float: left;
+    }
+    .input-type{
+      border-style: solid;
+      margin-top: 3px;
+      float: right;
+    }
+ .trocafone{
+  width: 200px;
+  height: 300px;
+  border-style: solid;
+
+}
+.celu{
+  display: inline-block;
+  width: 1000px;
+  height: 50px;
+  border-style: solid;
+  border-color: grey;
+}
+nav {
+  display: inline-block;
+  margin: auto;
+}
+.sam{
+  display: inline-block;
+  border-left: 0px;
+}
+nav.nok{
+  display: inline-block;
+  border-left: 30px;
+}
+nav.LG{
+  display:
+}
+main{
+  display: block;
+  margin: auto;
+  border-style: solid;
+  border-color: grey
+}
+footer.pagos{
+
+}
+footer.trocafon{
+
+}
+footer.redes/mails{
+
+}
