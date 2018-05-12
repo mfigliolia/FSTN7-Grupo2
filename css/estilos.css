@@ -6,7 +6,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background: white;
 }
 
 body {
@@ -68,28 +67,68 @@ h1 {
 /*------END login.html------*/
 
 /* crear_cuenta.html--------*/
-.subject{
-  display: flex;
-  align-items: center;
-  margin-top: 30px;
-  margin-left: 340px;
-  margin-bottom: 10px;
-}
 
 .box_fill_in{
   display: flex;
+  align-items: center;
   height: 280px;
   width: 480px;
   margin-left: 340px;
 }
 
 .box_fill_in label{
-  display: ;
   width: 140px;
   text-align: right;
 }
 
 /*------END crear_cuenta.html------*/
+
+
+/*------faq.html-------*/
+
+.container-faq {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(230,230,230);
+}
+
+.container-faq h2 {
+  font-size: 28px;
+  color: rgb(0,0,0);
+  text-decoration: underline;
+}
+
+.box-faq {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  margin-bottom: 25px;
+  background-color: rgb(250,250,250);
+}
+.pregunta {
+  background-color: rgb(203,31,7);
+  padding: 5px;
+}
+
+.pregunta h3 {
+  color: rgb(250,250,250);
+  text-shadow: 2px 2px rgb(0,0,0,0.4);
+  text-align: center;
+}
+
+.respuesta p {
+  padding-left: 35px;
+  text-align: left;
+  text-shadow: 1px 1px rgb(0,0,0,0.4);
+  font-size: 18px;
+}
+
+.respuesta li {
+  padding-left: 55px;
+}
+
+/*------faq.html------*/
 
 .main-nav {
   display: flex;
