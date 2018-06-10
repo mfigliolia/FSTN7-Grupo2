@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
     <title>CELL.HOUSE</title>
@@ -10,11 +10,13 @@
   <body>
     <main class="container">
         <header>
-          <h1>CELL.HOUSE</h1>
+          <a href="index.php">
+            <img src="images/logos/logo.png" atl="logo">
+          </a>
 
           <nav class="login-nav">
-            <a href="crear_cuenta.html">Creá tu cuenta</a>
-            <a href="login.html">Ingresá</a>
+            <a href="registro.php">Creá tu cuenta</a>
+            <a href="login.php">Ingresá</a>
           </nav>
         </header>
 
@@ -23,34 +25,41 @@
         <a href="#">ACCESORIOS</a>
         <a href="#">PAQUETES</a>
         <a href="#">CONTACTO</a>
-        <a href="faq.html">PREGUNTAS FRECUENTES</a>
+        <a href="faq.php">FAQ</a>
         </nav>
 
-        <section class="banner">
-        <img src="images/banner_1.jpg" alt="banner">
+        <section class="low-nav">
+        <a href="#">CELULARES</a>
+        <a href="#">ACCESORIOS</a>
+        <a href="#">PAQUETES</a>
+        <a href="#">CONTACTO</a>
+        <a href="faq.html">FAQ</a>
         </section>
+
+        <img class="banner" src="images/banner_1.jpg" alt="banner">
 
         <main>
         <div class="titulo">
           <h2 align="center">Lo último en CELULARES</h2>
         </div>
+
         <section class="novedades">
-          <article class="nuevo">
+          <article class="product">
             <img src="images/celulares/HUAWEI_MATE_10.jpg" alt="HUAWEI_MATE_10">
             <h3>Huawei Mate 10 Lite 4</h3>
             <p>Contado <strong>$8199.00</strong></p>
           </article>
-          <article class="nuevo">
+          <article class="product">
             <img src="images/celulares/LG_Q6_PLATINUM.jpg" alt="LG_Q6_PLATINUM">
             <h3>LG Q6 Alpha Platinum</h3>
             <p>Contado <strong>$5999.00</strong></p>
           </article>
-          <article class="nuevo">
+          <article class="product">
             <img src="images/celulares/MOTOROLA_E4_PLUS.jpg" alt="MOTOROLA_E4_PLUS">
             <h3>Motorola E4 Plus XT1772</h3>
             <p>Contado <strong>$5499.00</strong></p>
           </article>
-          <article class="nuevo">
+          <article class="product">
             <img src="images/celulares/NOBLEX_GO.jpg" alt="NOBLEX_GO">
             <h3>Noblex GO Action DUAL-SIM</h3>
             <p>Contado <strong>$3599.00</strong></p>
@@ -60,23 +69,24 @@
         <div class="titulo">
           <h2 align="center">Lo último en ACCESORIOS</h2>
         </div>
+
         <section class="novedades">
-          <article class="nuevo">
+          <article class="product">
             <img src="images/accesorios/samsung_charger.jpg" alt="samsung_charger">
             <h3>Cargador Samsung Wireless</h3>
             <p>Contado <strong>$999.00</strong></p>
           </article>
-          <article class="nuevo">
+          <article class="product">
             <img src="images/accesorios/phones_JBL.jpg" alt="phones_JBL">
             <h3>Auriculares JBL inalámbricos</h3>
             <p>Contado <strong>$799.00</strong></p>
           </article>
-          <article class="nuevo">
+          <article class="product">
             <img src="images/accesorios/powerbank_avengers.jpg" alt="powerbank_avengers">
-            <h3>Powerbank Captain America 6800mAh</h3>
+            <h3>Powerbank Captain America</h3>
             <p>Contado <strong>$349.00</strong></p>
           </article>
-          <article class="nuevo">
+          <article class="product">
             <img src="images/accesorios/viewcover_samsung_s6.jpg" alt="viewcover_samsung_s6">
             <h3>S View cover Samsung S6</h3>
             <p>Contado <strong>$499.00</strong></p>
@@ -94,6 +104,7 @@
               Adquirí al mejor costo</p>
           </div>
         </div>
+
         <div class="info">
           <div class="left">
             <img src="images/logos/tarjetas.png" alt="tarjetas">
@@ -103,6 +114,7 @@
               <a href="#">Ver medios de pago</a></p>
           </div>
         </div>
+
         <div class="info">
           <div class="left">
             <img src="images/logos/envios.png" alt="envios">
@@ -116,40 +128,28 @@
       <div class="titulo">
         <h2 align="center">El PAQUETE de la semana</h2>
       </div>
-      <section class="productos">
 
-          <nav class="categorias">
-            <h3>CATEGORÍAS</h3>
-              <li><a href="#">SAMSUNG</a></li>
-              <li><a href="#">MOTOROLA</a></li>
-              <li><a href="#">LG</a></li>
-              <li><a href="#">HUAWEI</a></li>
-              <li><a href="#">SONY</a></li>
-              <li><a href="#">ACCESORIOS</a></li>
-          </nav>
-
-          <section class="destacados">
-            <article class="promo">
+      <section class="paquete">
+            <article class="product">
               <img src="images/celulares/samsung_j5.jpg" alt="Samsung_J5">
               <h3>Samsung J5 Blanco SM-J510M</h3>
               <p>Contado <strong>$4199.00</strong></p>
             </article>
-            <article class="promo">
+            <article class="product">
               <img src="images/accesorios/funda_J5.jpg" alt="Funda_Samsung_J5">
               <h3>Funda slim Samsung J5</h3>
               <p>Contado <strong>$399.00</strong></p>
             </article>
-            <article class="promo">
+            <article class="product">
               <img src="images/accesorios/emoji_laught.jpg" alt="Cargador_emoji">
               <h3>Cargador portatil Emoji</h3>
               <p>Contado <strong>$299.00</strong></p>
             </article>
-          </section>
       </section>
 
       <footer>
         <div class="copyright">
-          <p>© Copyright 2018 | Todos los derechos reservados</p>
+          <p>© Copyright 2018</p>
         </div>
 
         <div class="social_box">

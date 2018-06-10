@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="Proyecto.html" dir="desktop/OneDrive/DigitalHouse/Proyecto">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
     <title>Preguntas Frecuentes a CELL.HOUSE</title>
@@ -11,10 +11,12 @@
   <body>
     <header>
 
-      <h1>CELL.HOUSE</h1>
+      <a href="index.php">
+        <img src="images/logos/logo.png" atl="logo">
+      </a>
 
       <nav class="login-nav">
-        <a href="index.html">Volver a pagina principal</a>
+        <a href="index.php">Volver a pagina principal</a>
       </nav>
     </header>
 
@@ -24,7 +26,7 @@
 
         <div class="box-faq">
           <div class="pregunta">
-            <h3 id="punto1">¿Qué es Cell House?</h3>
+            <h3 id="punto1">1. ¿Qué es Cell House?</h3>
           </div>
           <div class="respuesta">
             <p> Cell House es una tienda virtual pionera en Argentina y enfocada a <strong>la venta de celulares</strong>,
@@ -84,7 +86,7 @@
           </div>
           <div class="respuesta">
             <p>Por el momento, <strong>Cell House</strong> es una tienda virtual y por lo tanto toda
-              compra se realiza obviamente en esta humilde web. Contamos con un showroom
+              compra se realiza obviamente en esta web. Contamos con un showroom
             el cuál podés visitar, únicamente con previa coordinación y servicios post venta. </p>
           </div>
         </div>
@@ -126,7 +128,7 @@
         o completar <a href="#">nuestro formulario de contacto.</a> para asesorarte personalizadamente.</p>
           </div>
         </div>
-        <h2 align="center"><a href="index.html">Volver</a></h2>
+        <h3 align="center"><a href="index.html">Volver</a></h3>
       </section>
     </main>
 
