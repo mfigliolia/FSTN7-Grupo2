@@ -1,3 +1,12 @@
+<?php
+
+/*
+$nombreD = $_POST["nombre"];
+$apellidoD = $_POST["apellido"];
+$emailD = $_POST["email"];
+$ciudadD = $_POST["ciudad"];
+*/
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -25,14 +34,14 @@
               <h1>Bienvenido!<br>Por favor completá tus datos:</h1>
           <!--</div>-->
           <div class="register-user">
-            <form action="" method="post" enctype="multipart/form-data">
+            <form action="validaciones.php" method="post" enctype="multipart/form-data">
                 <label for="nombre">Nombre:</label>
                 <input placeholder="Ingresá tu nombre"type="text" name="nombre">
                 <br>
-                <label for="nombre">Apellido:</label>
+                <label for="apellido">Apellido:</label>
                 <input placeholder="Ingresá tu apellido"type="text" name="apellido">
                 <br>
-                <label for="e-mail">E-mail:</label>
+                <label for="email">E-mail:</label>
                 <input placeholder="Ingresá tu email"type="text" name="email">
                 <br>
                 <label for="clave">Contraseña:</label>
@@ -44,7 +53,7 @@
                 <label for="ciudad">Ciudad:</label>
                 <input placeholder="Ciudad" type="text" name="ciudad">
                 <br>
-                <input type="file" name="imgPerfil" required>
+                <input type="file" name="imgPerfil">
                 <br>
                 <input type="submit">
             </form>
