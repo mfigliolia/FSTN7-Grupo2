@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -10,7 +11,7 @@
   <body>
     <main class="container">
         <header>
-        
+
         <a href="index.php">
             <img src="images/logos/logo.png" atl="logo">
         </a>
@@ -32,9 +33,9 @@
             <input type="password" placeholder="Ingresá tu contraseña... " name="contrasena" style="border-color: rgb(203,31,7); height: 30px;">
             <br>
             <input type="checkbox" class="checkbox" name="recordar">
-            <label for="recordar">Recordarme</label>
+            <label for="recordar">Recordarme en este sitio</label>
             <br>
-          <input type="submit" name="Enviar">
+          <input type="submit" name="LOGIN" value="LOGIN">
         </form>
         </div>
       </div>

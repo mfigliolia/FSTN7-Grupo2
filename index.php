@@ -33,7 +33,7 @@
         <a href="#">ACCESORIOS</a>
         <a href="#">PAQUETES</a>
         <a href="#">CONTACTO</a>
-        <a href="faq.html">FAQ</a>
+        <a href="faq.php">FAQ</a>
         </section>
 
         <img class="banner" src="images/banner_1.jpg" alt="banner">

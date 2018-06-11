@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -128,7 +129,7 @@
         o completar <a href="#">nuestro formulario de contacto.</a> para asesorarte personalizadamente.</p>
           </div>
         </div>
-        <h3 align="center"><a href="index.html">Volver</a></h3>
+        <h3 align="center"><a href="index.php">Volver</a></h3>
       </section>
     </main>
 
