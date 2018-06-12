@@ -144,21 +144,40 @@ function guardarImagen($usuario) {
   return $errores;
 }
 
-//PARA DESPUÉS//
+//----------------------------------//
 
-
-/* function validarLogin($datos)
+function validarLogin($datos)
 {
-    $arrayDeErrores = [];
+    $errores = [];
 
-    if (!filter_var($datos['email'], FILTER_VALIDATE_EMAIL)) {
-        $arrayDeErrores[] = 'El email es invalido';
+    if (strlen($datos['email']) == 0) {
+      $errores['email'] = "Debés ingresar un email";
+    } elseif (!filter_var($datos['email'], FILTER_VALIDATE_EMAIL)) {
+        $errores[] = 'El email es invalido';
     }
 
     if (empty($datos['contrasena'])) {
-        $arrayDeErrores[] = 'Ingrese un password';
+        $errores[] = 'Ingrese un password';
     }
 
-    return $arrayDeErrores;
+    return $errores;
 }
-*/
+
+function loguear($datos)
+{
+    $usuario = dameMail($datos['email']);
+    if (!$usuario) {
+        return ['Este email no existe en nuestra base de datos'];
+    }
+
+    if (!password_verify($datos['contrasena'], $usuario['contrasena'])) {
+        return ['La contraseña es incorrecta'];
+    }
+
+    unset($usuario['contrasena']);
+    $_SESSION['nombre'] = $usuario;
+
+    if (isset($datos['recordarme'])) {
+        setcookie('name', $usuario['id'], time() + 60 * 60 * 24 * 365 * 5);
+    }
+}

@@ -82,9 +82,8 @@ if ($_POST) {
           <div class="login-user-container">
               <h1>Bienvenido!<br>Por favor completá tus datos:</h1>
           <!--</div>-->
-          <?php
-          if($errores) {
-          ?>
+        <?php
+        if($errores) { ?>
           <div class="error-alert" style="background-color: rgb(240,240,240);">
             <div><strong>Ups...</strong></div>
             <ul style="color: rgb(203,31,7);">
@@ -94,8 +93,8 @@ if ($_POST) {
                     <li><?php echo $error ?></li>
                 <?php } ?>
             </ul>
-        </div>
-    <?php } ?>
+          </div>
+        <?php } ?>
 
           <div class="register-user">
             <form action="registro.php" method="post" enctype="multipart/form-data">

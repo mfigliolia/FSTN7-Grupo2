@@ -26,7 +26,7 @@ header {
 }
 
 header img {
-  width: 80%;
+  width: 90%;
 }
 
 
@@ -117,7 +117,7 @@ h1 {
   padding-left: 130px;
   text-align: justify;
   background: white;
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
 }
 
 .register-user label {
@@ -135,6 +135,17 @@ h1 {
 
 /*------END registro.php------*/
 
+/*------ bienvenido.php------*/
+
+.login-user-container {
+  margin-top: 70px;
+  height: 120px;
+  width: 520px;
+  text-align: center;
+  background-color: rgb(203,31,7);
+}
+
+/*------END bienvenido.php------*/
 
 /*------ faq.php -------*/
 
