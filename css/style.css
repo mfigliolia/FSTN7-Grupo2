@@ -1,4 +1,5 @@
-  * {
+* {
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -255,7 +256,7 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
-}  
+}
 
 .titulo {
   border-bottom: 5px solid rgb(0,0,0,0.1);
@@ -349,7 +350,6 @@ footer {
   align-items: center;
   height: 90px;
   margin-top: 25px;
-  margin-bottom: 25px;
   padding-right: 70px;
   padding-left: 70px;
   background-color: rgb(203,31,7);
@@ -470,7 +470,7 @@ footer {
 
   .login-user-container {
     width: 100%;
-  }  
+  }
 
   .login-user input:last-child {
       background-color: gainsboro;
