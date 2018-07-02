@@ -4,10 +4,9 @@
   </a>
 
   <nav class="login-nav">
-    <a href="registro.php">Creá tu cuenta</a>
-    <a href="login.php">Ingresá</a>
+    <a href="paginas/registro.php">Creá tu cuenta</a>
+    <a href="paginas/login.php">Ingresá</a>
   </nav>
-
 </header>
 
 

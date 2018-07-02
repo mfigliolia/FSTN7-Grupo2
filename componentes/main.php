@@ -8,24 +8,28 @@
         <img src="images/celulares/HUAWEI_MATE_10.jpg" alt="HUAWEI_MATE_10">
         <h3>Huawei Mate 10 Lite 4</h3>
         <p>Contado <strong>$8199.00</strong></p>
+        <a href="">AGREGAR</a>
       </article>
 
     <article class="product">
       <img src="images/celulares/LG_Q6_PLATINUM.jpg" alt="LG_Q6_PLATINUM">
       <h3>LG Q6 Alpha Platinum</h3>
       <p>Contado <strong>$5999.00</strong></p>
+      <a href="">AGREGAR</a>
     </article>
 
     <article class="product">
       <img src="images/celulares/MOTOROLA_E4_PLUS.jpg" alt="MOTOROLA_E4_PLUS">
       <h3>Motorola E4 Plus XT1772</h3>
       <p>Contado <strong>$5499.00</strong></p>
+      <a href="">AGREGAR</a>
     </article>
 
     <article class="product">
       <img src="images/celulares/NOBLEX_GO.jpg" alt="NOBLEX_GO">
       <h3>Noblex GO Action DUAL-SIM</h3>
       <p>Contado <strong>$3599.00</strong></p>
+      <a href="">AGREGAR</a>
     </article>
   </section>
 
@@ -38,24 +42,28 @@
       <img src="images/accesorios/samsung_charger.jpg" alt="samsung_charger">
       <h3>Cargador Samsung Wireless</h3>
       <p>Contado <strong>$999.00</strong></p>
+      <a href="">AGREGAR</a>
     </article>
 
     <article class="product">
       <img src="images/accesorios/phones_JBL.jpg" alt="phones_JBL">
       <h3>Auriculares JBL inalámbricos</h3>
       <p>Contado <strong>$799.00</strong></p>
+      <a href="">AGREGAR</a>
     </article>
 
     <article class="product">
       <img src="images/accesorios/powerbank_avengers.jpg" alt="powerbank_avengers">
       <h3>Powerbank Captain America</h3>
       <p>Contado <strong>$349.00</strong></p>
+      <a href="">AGREGAR</a>
     </article>
 
     <article class="product">
       <img src="images/accesorios/viewcover_samsung_s6.jpg" alt="viewcover_samsung_s6">
       <h3>S View cover Samsung S6</h3>
       <p>Contado <strong>$499.00</strong></p>
+      <a href="">AGREGAR</a>
     </article>
   </section>
 </main>
@@ -100,15 +108,20 @@
         <img src="images/celulares/samsung_j5.jpg" alt="Samsung_J5">
         <h3>Samsung J5 Blanco SM-J510M</h3>
         <p>Contado <strong>$4199.00</strong></p>
+        <a href="">AGREGAR</a>
       </article>
+      
       <article class="product">
         <img src="images/accesorios/funda_J5.jpg" alt="Funda_Samsung_J5">
         <h3>Funda slim Samsung J5</h3>
         <p>Contado <strong>$399.00</strong></p>
+        <a href="">AGREGAR</a>
       </article>
+
       <article class="product">
         <img src="images/accesorios/emoji_laught.jpg" alt="Cargador_emoji">
         <h3>Cargador portatil Emoji</h3>
         <p>Contado <strong>$299.00</strong></p>
+        <a href="">AGREGAR</a>
       </article>
 </section>
