@@ -9,9 +9,9 @@
 
 <!-- navbar para baja resolucion --> 
 <section class="low-nav">
-  <a href="?pagina=celulares">CELULARES</a>
-  <a href="?pagina=accesorios">ACCESORIOS</a>
-  <a href="?pagina=paquetes">PAQUETES</a>
+  <a href="#">CELULARES</a>
+  <a href="#">ACCESORIOS</a>
+  <a href="#">PAQUETES</a>
   <a href="#">CONTACTO</a>
-  <a href="paginas/faq.php">FAQ</a>
+  <a href="faq.php">FAQ</a>
 </section>

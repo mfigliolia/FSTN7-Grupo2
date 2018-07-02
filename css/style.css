@@ -310,12 +310,23 @@ main {
 }
 
 .product a {
+<<<<<<< HEAD
   width: 30%;
   height: 50px;
   background-color: rgb(203,31,7);
   text-align: center;
   padding-top: 8px; 
   margin-top:10px;
+=======
+  width: 35%;
+  height: 50px;
+  color: rgb(250,250,250);
+  text-align: center;
+  text-decoration: none;
+  background-color: rgb(3,189,223);
+  margin-top:15px;
+  padding-top: 15px;
+>>>>>>> 156ee6a7073b20dc3dda83e89b843b7ea829da22
 }
 
 .paquete{

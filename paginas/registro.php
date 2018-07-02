@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD:paginas/registro.php
 require_once("../funciones.php");
+=======
+require_once("../funciones/funciones.php");
+>>>>>>> 156ee6a7073b20dc3dda83e89b843b7ea829da22:paginas/registro.php
 $errorNombre = '';
 $errorApellido = '';
 $errorMail = '';
@@ -27,7 +31,11 @@ if ($_POST) {
         guardarUsuario($usuario);
         session_start();
         $_SESSION['nombre'] = $_POST['nombre'];
+<<<<<<< HEAD:paginas/registro.php
         header("location: login.php");
+=======
+        header("location: ../bienvenido.php");
+>>>>>>> 156ee6a7073b20dc3dda83e89b843b7ea829da22:paginas/registro.php
       }
     }
 
