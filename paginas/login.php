@@ -1,9 +1,5 @@
 <?php
-<<<<<<< HEAD:paginas/login.php
 require_once("../funciones.php");
-=======
-require_once("../funciones/funciones.php");
->>>>>>> 156ee6a7073b20dc3dda83e89b843b7ea829da22:paginas/login.php
 $errores = [];
 
 if ($_POST) {
@@ -65,11 +61,7 @@ if ($_POST) {
           <input type="submit" name="LOGIN" value="LOGIN">
         </form>
 
-<<<<<<< HEAD:paginas/login.php
         <a href="registro.php">Si no tenés cuenta, registrate acá</a>
-=======
-        <a href="registro.php"> Si no tenés cuenta, registrate acá </a>
->>>>>>> 156ee6a7073b20dc3dda83e89b843b7ea829da22:paginas/login.php
 
         </div>
       </div>

@@ -3,11 +3,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-<<<<<<< HEAD:paginas/indexlogin.php
     <link rel="stylesheet" href="../css/style.css">
-=======
-    <link rel="stylesheet" href="css/style.css">
->>>>>>> 156ee6a7073b20dc3dda83e89b843b7ea829da22:indexlogin.php
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
     <title>CELL.HOUSE</title>

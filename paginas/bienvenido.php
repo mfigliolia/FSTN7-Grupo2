@@ -30,9 +30,5 @@ $errores = [];
           <p style="color: white;">Bienvenido, <?php echo $_SESSION['nombre']?>, a la comunidad de Cell House</p>
           </div>
        </div>
-<<<<<<< HEAD:paginas/bienvenido.php
   <a href="paginas/login.php" style="padding-left: 520px;"><input type="submit" value="Empezá a navegar"></a>  
-=======
-  <a href="login.php" style="padding-left: 520px;"><input type="submit" value="Empezá a navegar"></a>  
->>>>>>> 156ee6a7073b20dc3dda83e89b843b7ea829da22:bienvenido.php
   </body>
