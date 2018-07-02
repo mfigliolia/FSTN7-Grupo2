@@ -1,8 +1,9 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="../css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
     <title>CELL.HOUSE</title>
@@ -11,7 +12,7 @@
     <main class="container">
         <header>
           <a href="index.php">
-            <img src="images/logos/logo.png" atl="logo">
+            <img src="/images/logos/logo.png" atl="logo">
           </a>
 
           <nav class="login-nav">

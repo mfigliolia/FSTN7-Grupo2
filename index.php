@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-  <?php include_once('head.php'); ?>
+  <?php
+    include_once('componentes/head.php');
+
+    include_once('componentes/header.php');
+
+    include_once('componentes/navigation.php');
+  ?>
 
   <body>
     <main class="container">
 
       <?php 
-        include_once('header.php');
 
-        include_once('navigation.php');
+      $paginas = ['home', 'faq', 'login', 'celulares', 'accesorios', 'paquetes', 'contacto'];
+
+      if (isset($_GET['pagina']) && in_array($_GET['pagina'], $paginas)) {
+        include('paginas/'. $_GET['pagina'] . '.php');
+      } else {
+        include('paginas/home.php'); 
+      }
+
       ?>
-      <!-- banner "preventa" -->
-
-      <img class="banner" src="images/banner_1.jpg" alt="banner">
-
-      <!-- fin banner "preventa" -->
-      <?php
-        include_once('main.php');
-
-        include_once('footer.php');
-      ?>
+    
     </main>
+
+    <?php include_once('componentes/footer.php'); ?>  
   </body>
 </html>

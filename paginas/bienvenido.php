@@ -7,7 +7,7 @@ $errores = [];
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
     <title>Registrate en CELL.HOUSE</title>
@@ -30,5 +30,5 @@ $errores = [];
           <p style="color: white;">Bienvenido, <?php echo $_SESSION['nombre']?>, a la comunidad de Cell House</p>
           </div>
        </div>
-  <a href="index.php" style="padding-left: 520px;"><input type="submit" value="Empezá a navegar"></a>  
+  <a href="paginas/login.php" style="padding-left: 520px;"><input type="submit" value="Empezá a navegar"></a>  
   </body>

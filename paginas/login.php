@@ -1,5 +1,5 @@
-<?php session_start();
-require_once("funciones/funciones.php");
+<?php
+require_once("../funciones.php");
 $errores = [];
 
 if ($_POST) {
@@ -20,24 +20,16 @@ if ($_POST) {
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="../css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
-    <title>Ingresá en CELL.HOUSE</title>
+    <title>:: CELL.HOUSE - LOGIN</title>
   </head>
+
   <body>
     <main class="container">
-        <header>
-
-        <a href="index.php">
-            <img src="images/logos/logo.png" atl="logo">
-        </a>
-
-        <nav class="login-nav">
-          <a href="index.php">Volver a pagina principal</a>
-        </nav>
-
-        </header>
+        
+    <?php include_once('../componentes/header-2.php'); ?>    
 
     <div class="container-login">
         <div class="login-user-container">
@@ -68,12 +60,14 @@ if ($_POST) {
             <br>
           <input type="submit" name="LOGIN" value="LOGIN">
         </form>
+
+        <a href="registro.php">Si no tenés cuenta, registrate acá</a>
+
         </div>
       </div>
 
     </div>
 
   </main>
-
   </body>
 </html>

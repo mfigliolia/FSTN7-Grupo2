@@ -1,5 +1,5 @@
 <?php
-require_once("funciones/funciones.php");
+require_once("../funciones.php");
 $errorNombre = '';
 $errorApellido = '';
 $errorMail = '';
@@ -22,11 +22,12 @@ if ($_POST) {
       $erroresDeImagen = guardarImagen($usuario);
 
       $errores = array_merge($errores, $erroresDeImagen);
+      
       if (count($errores) == 0) {
         guardarUsuario($usuario);
         session_start();
         $_SESSION['nombre'] = $_POST['nombre'];
-        header("location: bienvenido.php");
+        header("location: login.php");
       }
     }
 
@@ -60,24 +61,16 @@ if ($_POST) {
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="../css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
-    <title>Registrate en CELL.HOUSE</title>
+    <title>:: CELL.HOUSE - REGISTRO</title>
   </head>
 
   <body>
-    <header>
-
-    <a href="index.php">
-      <img src="images/logos/logo.png" atl="logo">
-    </a>
-
-    <nav class="login-nav">
-      <a href="index.php">Volver a pagina principal</a>
-    </nav>
-    </header>
-
+    
+    <?php include_once('../componentes/header-2.php'); ?>
+    
     <div class="box_fill_in">
           <div class="login-user-container">
               <h1>Bienvenido!<br>Por favor completá tus datos:</h1>
@@ -113,13 +106,14 @@ if ($_POST) {
                 <label for="clave">Confirmá contraseña:</label>
                 <input placeholder="Confirmá tu clave" type="password" name="contrasena_confirm" id="contrasena_confirm">
                 <br>
-                <label for="ciudad">Ciudad:</label>
-                <input class="<?=$errorCiudad?>" placeholder="Ciudad" type="text" name="ciudad" id="ciudad" value="<?=$ciudadD?>">
+                <label for="ciudad">Domicilio:</label>
+                <input class="<?=$errorCiudad?>" placeholder="Ingresá tu domicilio" type="text" name="ciudad" id="ciudad" value="<?=$ciudadD?>">
                 <br>
                 <input type="file" name="avatar" id="avatar">
                 <br>
                 <input type="submit">
             </form>
+            <a href="login.php">Si ya tenés cuenta, logueate acá </a>
           </div>
 
           </div>
