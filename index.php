@@ -1,10 +1,17 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+  <?php require_once('global.php'); ?>
+
+  <?php require_once('funciones/auth.php'); ?>
 
   <?php
+    $pageTitle = ':: CELL.HOUSE';
+
     include_once('componentes/head.php');
 
-    include_once('componentes/header.php');
+  if (isLoggedIn()) {
+		include_once('componentes/header_logout.php');
+	} else {
+		include_once('componentes/header_login.php');
+	};
 
     include_once('componentes/navigation.php');
   ?>
@@ -14,12 +21,12 @@
 
       <?php 
 
-      $paginas = ['home', 'faq', 'login', 'celulares', 'accesorios', 'paquetes', 'contacto'];
+      $paginas = ['home', 'faq', 'login', 'celulares', 'accesorios', 'paquetes', 'contacto', 'faq'];
 
       if (isset($_GET['pagina']) && in_array($_GET['pagina'], $paginas)) {
-        include('paginas/'. $_GET['pagina'] . '.php');
+        include($_GET['pagina'] . '.php');
       } else {
-        include('paginas/home.php'); 
+        include('home.php'); 
       }
 
       ?>

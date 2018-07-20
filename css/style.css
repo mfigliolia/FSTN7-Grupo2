@@ -15,6 +15,16 @@ body {
   background-color: rgb(230,230,230);
 }
 
+a,
+p,
+h1,
+h2,
+h3, 
+h4, 
+h5 {
+  font-family: 'Play', sans-serif;
+}
+
 header {
   display: flex;
   width: 100%;
@@ -23,7 +33,7 @@ header {
   background-color: rgb(203,31,7);
   align-items: center;
   padding-left: 60px;
-  padding-right: 60px;
+  padding-right: 20px;
 }
 
 header img {
@@ -36,13 +46,44 @@ h1 {
   text-shadow: 2px 2px rgb(0,0,0,0.4);
 }
 
+.login-nav {
+  display: flex;
+  flex-direction: row;
+  width: 22%;
+}
+
 .login-nav a {
   font-size: 1em;
   padding: 15px;
   text-decoration: underline;
   color: rgb(250,250,250);
 }
+.button-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
+.button-user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 55%;
+  align-items: center;
+  background-color: rgb(203,31,7);
+  border: none;
+}
+
+.button-user:hover {
+  transform: scale(0.9);
+  background-color: rgb(180,31,7);
+  cursor: pointer;
+}
+
+.button-user p {
+  font-size: 1.4em;
+  color: rgb(250,250,250);
+}
 /*------login.php-------*/
 
 .container-login{
@@ -88,10 +129,6 @@ h1 {
   margin-left: 80px;
 }
 
-/*------ login.php -------*/
-
-
-
 /*------END login.php------*/
 
 /* registro.php--------*/
@@ -133,8 +170,6 @@ h1 {
   margin-top: 10px;
   margin-left: 80px;
 }
-
-.
 
 /*------END registro.php------*/
 
@@ -215,7 +250,7 @@ h1 {
 }
 
 .main-nav a {
-  width: 230px;
+  width: 19.5%;
   height: 50px;
   font-size: 1.2em;
   background-color: rgb(203,31,7);
@@ -273,7 +308,6 @@ main {
 
 .titulo h2{
   text-shadow: 2px 2px rgb(0,0,0,0.2);
-  
   margin:10px;
 }
 
@@ -302,10 +336,12 @@ main {
 
 .product h3 {
   font-size: 1.17em;
+  text-align: center;
 }
 
 .product p{
   font-size: 1em;
+  text-align: center;
   color: rgb(203,31,7);
 }
 
@@ -398,7 +434,7 @@ footer {
 /*------ MEDIA QUERIES -------*/
 /*------ TABLETS -------*/
 
-@media only screen and (min-device-width : 481px) and (max-device-width : 1024px){
+@media only screen and (max-width : 1024px){
 
   header{
     display: flex;
@@ -407,7 +443,7 @@ footer {
   }
 
   .main-nav a {
-    width: 19%;
+    width: 18%;
   }
 
   .novedades{
@@ -444,11 +480,10 @@ footer {
     border-radius: 50%
   }
 
-
  }
 
 /*------ SMARTPHONES -------*/
-@media only screen and (max-device-width : 480px) {
+@media only screen and (max-width : 480px) {
 
   header {
     display: flex;
@@ -519,6 +554,6 @@ footer {
     justify-content: center;
     padding: 10px;
   }
-
+}
 /*------ END SMARTPHONES -------*/
 /*------ END MEDIA QUERIES -------*/

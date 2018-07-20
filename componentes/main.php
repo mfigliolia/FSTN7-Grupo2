@@ -1,8 +1,8 @@
 <main>
   <?php
-    include('paginas/celulares.php');
+    include('celulares.php');
 
-    include('paginas/accesorios.php');
+    include('accesorios.php');
   ?>
 
 </main>
@@ -38,4 +38,4 @@
   </div>
 </section>
 
-  <<?php include('paginas/paquetes.php'); ?>
+  <<?php include('paquetes.php'); ?>

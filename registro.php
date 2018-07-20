@@ -1,5 +1,9 @@
+<?php require_once('global.php'); ?>
+
 <?php
-require_once("../funciones.php");
+require_once('funciones/validaciones.php');
+require_once('funciones/auth.php');
+
 $errorNombre = '';
 $errorApellido = '';
 $errorMail = '';
@@ -15,18 +19,12 @@ $errores = [];
 
 if ($_POST) {
 
-    $errores = validarInformacion($_POST);
+    $errores = validarRegistro($_POST);
     if (count($errores) == 0) {
-      $usuario = crearUsuario($_POST);
-
-      $erroresDeImagen = guardarImagen($usuario);
-
-      $errores = array_merge($errores, $erroresDeImagen);
+      
+      $errores = registrar($_POST);
       
       if (count($errores) == 0) {
-        guardarUsuario($usuario);
-        session_start();
-        $_SESSION['nombre'] = $_POST['nombre'];
         header("location: login.php");
       }
     }
@@ -59,17 +57,12 @@ if ($_POST) {
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="../css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
-    <title>:: CELL.HOUSE - REGISTRO</title>
-  </head>
+  <?php $pageTitle = ':: Registro - CELL.HOUSE';
+  include_once('componentes/head.php'); ?>
 
   <body>
     
-    <?php include_once('../componentes/header-2.php'); ?>
+    <?php include_once('componentes/header_login.php'); ?>
     
     <div class="box_fill_in">
           <div class="login-user-container">

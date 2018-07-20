@@ -4,7 +4,7 @@
   <a href="?pagina=accesorios">ACCESORIOS</a>
   <a href="?pagina=paquetes">PAQUETES</a>
   <a href="#">CONTACTO</a>
-  <a href="paginas/faq.php">FAQ</a>
+  <a href="?pagina=faq">FAQ</a>
 </nav>
 
 <!-- navbar para baja resolucion --> 
@@ -13,5 +13,5 @@
   <a href="?pagina=accesorios">ACCESORIOS</a>
   <a href="?pagina=paquetes">PAQUETES</a>
   <a href="#">CONTACTO</a>
-  <a href="paginas/faq.php">FAQ</a>
+  <a href="?pagina=faq">FAQ</a>
 </section>
