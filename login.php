@@ -1,5 +1,9 @@
-<?php session_start();
-require_once("funciones/funciones.php");
+<?php require_once('global.php'); ?>
+
+<?php
+//incluimos los archivos que tienen nuestras funciones
+require_once('funciones/validaciones.php');
+require_once('funciones/auth.php');
 $errores = [];
 
 if ($_POST) {
@@ -10,34 +14,19 @@ if ($_POST) {
       $errores = loguear($_POST);
 
       if (!$errores) {
-        header('location: indexlogin.php');exit;
+        header('location: index.php');exit;
       }
     }
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/estilos.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
-    <title>Ingresá en CELL.HOUSE</title>
-  </head>
+<?php $pageTitle = ":: Login - CELL.HOUSE";
+  require_once('componentes/head.php'); ?>
+
   <body>
     <main class="container">
-        <header>
-
-        <a href="index.php">
-            <img src="images/logos/logo.png" atl="logo">
-        </a>
-
-        <nav class="login-nav">
-          <a href="index.php">Volver a pagina principal</a>
-        </nav>
-
-        </header>
+        
+    <?php include_once('componentes/header_login.php'); ?>    
 
     <div class="container-login">
         <div class="login-user-container">
@@ -66,14 +55,16 @@ if ($_POST) {
             <input type="checkbox" class="checkbox" name="recordarme">
             <label for="recordarme">Recordarme en este sitio</label>
             <br>
-          <input type="submit" name="LOGIN" value="LOGIN">
+          <input type="submit" name="login" value="Login">
         </form>
+
+        <a href="registro.php">Si no tenés cuenta, registrate acá</a>
+
         </div>
       </div>
 
     </div>
 
   </main>
-
   </body>
 </html>

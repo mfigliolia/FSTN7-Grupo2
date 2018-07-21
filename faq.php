@@ -1,25 +1,13 @@
-<?php session_start() ?>
+<?php require_once('global.php');?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/estilos.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
-    <title>Preguntas Frecuentes a CELL.HOUSE</title>
-  </head>
+  <?php $pageTitle = ":: Preguntas Frecuentes - CELL.HOUSE";
+  require_once('componentes/head.php'); ?>
 
   <body>
-    <header>
-
-      <a href="index.php">
-        <img src="images/logos/logo.png" atl="logo">
-      </a>
-
-      <nav class="login-nav">
-        <a href="index.php">Volver a pagina principal</a>
-      </nav>
-    </header>
+    <?php 
+    include_once('componentes/navigation.php');
+    ?>
 
     <main class="container">
       <section class="container-faq">
@@ -97,7 +85,7 @@
             <h3>6. ¿Cómo recibo mi comprar?</h3>
           </div>
           <div class="respuesta">
-            <p>Tu compra se envía <a href="crear_cuenta.html">al domicilio que registraste</a> y el envío es sin costo y para todo territorrio dentro
+            <p>Tu compra se envía <a href="registro.php">al domicilio que registraste</a> y el envío es sin costo y para todo territorrio dentro
             del país. ¿Qué transporte usamos? <a href="https://www.correoargentino.com.ar/" target="_blank">Correo Argentino</a>,
             donde vás a poder seguir el estado de tu paquete mediante un nº tracking</p>
           </div>
@@ -129,32 +117,11 @@
         o completar <a href="#">nuestro formulario de contacto.</a> para asesorarte personalizadamente.</p>
           </div>
         </div>
-        <h3 align="center"><a href="index.php">Volver</a></h3>
+        <h3 align="center"><a href="../index.php">Volver</a></h3>
       </section>
     </main>
 
-      <footer>
-        <div class="copyright">
-          <p>© Copyright 2018 | Todos los derechos reservados</p>
-        </div>
+      <?php include_once('componentes/footer.php'); ?>
 
-        <div class="social_box">
-          <div class="social_item">
-              <a href="http://facebook.com" target="_blank">
-                  <img src="images/logos/facebook_icon.png" alt="facebook">
-              </a>
-          </div>
-          <div class="social_item">
-              <a href="http://twitter.com" target="_blank">
-                  <img src="images/logos/twitter_icon.png" alt="twitter">
-              </a>
-          </div>
-          <div class="social_item">
-              <a href="http://instagram.com" target="_blank">
-                  <img src="images/logos/instagram_icon.png" alt="instagram">
-              </a>
-          </div>
-        </div>
-      </footer>
   </body>
 </html>

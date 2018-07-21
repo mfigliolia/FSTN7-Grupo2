@@ -1,26 +1,38 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+  <?php require_once('global.php'); ?>
 
-  <?php include_once('head.php'); ?>
+  <?php require_once('funciones/auth.php'); ?>
+
+  <?php
+    $pageTitle = ':: CELL.HOUSE';
+
+    include_once('componentes/head.php');
+
+  if (isLoggedIn()) {
+		include_once('componentes/header_logout.php');
+	} else {
+		include_once('componentes/header_login.php');
+	};
+
+    include_once('componentes/navigation.php');
+  ?>
 
   <body>
     <main class="container">
 
       <?php 
-        include_once('header.php');
 
-        include_once('navigation.php');
+      $paginas = ['home', 'faq', 'login', 'celulares', 'accesorios', 'paquetes', 'contacto', 'faq'];
+
+      if (isset($_GET['pagina']) && in_array($_GET['pagina'], $paginas)) {
+        include($_GET['pagina'] . '.php');
+      } else {
+        include('home.php'); 
+      }
+
       ?>
-      <!-- banner "preventa" -->
-
-      <img class="banner" src="images/banner_1.jpg" alt="banner">
-
-      <!-- fin banner "preventa" -->
-      <?php
-        include_once('main.php');
-
-        include_once('footer.php');
-      ?>
+    
     </main>
+
+    <?php include_once('componentes/footer.php'); ?>  
   </body>
 </html>
