@@ -1,9 +1,17 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <main>
   <?php
     include('celulares.php');
 
     include('accesorios.php');
+=======
+<main>
+  <?php
+    include('paginas/celulares.php');
+
+    include('paginas/accesorios.php');
+>>>>>>> parent of 59eb447... sprint 3
   ?>
 
 </main>
@@ -39,6 +47,7 @@
   </div>
 </section>
 
+<<<<<<< HEAD
 =======
 <main>
   <?php
@@ -82,3 +91,6 @@
 
 >>>>>>> 59eb4479753f621c9a5d0761f5eba73818a05bf1
   <<?php include('paquetes.php'); ?>
+=======
+  <<?php include('paginas/paquetes.php'); ?>
+>>>>>>> parent of 59eb447... sprint 3

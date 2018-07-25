@@ -1,4 +1,7 @@
+<<<<<<< HEAD:bienvenido.php
 <<<<<<< HEAD
+=======
+>>>>>>> parent of 59eb447... sprint 3:paginas/bienvenido.php
 <?php
 session_start();
 $errores = [];
@@ -33,6 +36,7 @@ $errores = [];
        </div>
   <a href="paginas/login.php" style="padding-left: 520px;"><input type="submit" value="Empezá a navegar"></a>  
   </body>
+<<<<<<< HEAD:bienvenido.php
 =======
 <?php
 session_start();
@@ -69,3 +73,5 @@ $errores = [];
   <a href="paginas/login.php" style="padding-left: 520px;"><input type="submit" value="Empezá a navegar"></a>  
   </body>
 >>>>>>> 59eb4479753f621c9a5d0761f5eba73818a05bf1
+=======
+>>>>>>> parent of 59eb447... sprint 3:paginas/bienvenido.php

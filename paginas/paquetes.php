@@ -1,4 +1,7 @@
+<<<<<<< HEAD:paquetes.php
 <<<<<<< HEAD
+=======
+>>>>>>> parent of 59eb447... sprint 3:paginas/paquetes.php
 <div class="titulo">
   <h2 align="center">El PAQUETE de la semana</h2>
 </div>
@@ -24,6 +27,7 @@
         <p>Contado <strong>$299.00</strong></p>
         <a href=""><img style="width: 30px;" src="images/logos/cart-add.png"></a>
       </article>
+<<<<<<< HEAD:paquetes.php
 =======
 <div class="titulo">
   <h2 align="center">El PAQUETE de la semana</h2>
@@ -51,4 +55,6 @@
         <a href=""><img style="width: 30px;" src="images/logos/cart-add.png"></a>
       </article>
 >>>>>>> 59eb4479753f621c9a5d0761f5eba73818a05bf1
+=======
+>>>>>>> parent of 59eb447... sprint 3:paginas/paquetes.php
 </section>
