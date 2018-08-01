@@ -1,19 +1,20 @@
 <?php
 class Producto
 {
-private $idproduct
-private $precio
-private $cantproduct
-private $nombre
-private $ubicacion
+private $id;
+private $nombre;
+private $descripcion;
+private $precio;
+private $categoria;
 
-public function__construct(string $nombre, int $idproduct, int $precio, string $ubicacion){
-  $this ->nombre = $nombre;
-  $this ->idproduct = $idproduct;
-  $this ->precio = $precio;
-  $this ->cantproduct = $cantproduct[];
-  $this ->ubicacion = $ubicacion;
+public function __construct($id, $nombre, $descripcion, $precio, $categoria) {
+  $this->id = $id;
+  $this->nombre = $nombre;
+  $this->descripcion = $descripcion;
+  $this->precio = $precio;
+  $this->categoria = $categoria;
 }
+
 public function get_nombre(){
   return $this ->nombre;
 }

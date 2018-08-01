@@ -1,75 +1,69 @@
-<?php
-require_once("../funciones.php");
-$errorNombre = '';
-$errorApellido = '';
-$errorMail = '';
-$errorContrasena = '';
-$errorCiudad = '';
+<?php 
+    
+    include_once('loader.php');
+    require_once('classes/Usuario.php');
+    // require_once('global.php'); 
+    // require_once('funciones/validaciones.php');
+    // require_once('funciones/auth.php');
 
-$nombreD =  '';
-$apellidoD =  '';
-$emailD = '';
-$ciudadD = '';
+    $nombreD =  '';
+    $apellidoD =  '';
+    $emailD = '';
+    $domicilioD = '';
 
-$errores = [];
+    $errores = [];
 
-if ($_POST) {
+    if ($_POST) {
 
-    $errores = validarInformacion($_POST);
-    if (count($errores) == 0) {
-      $usuario = crearUsuario($_POST);
+        $errores = $validator->validarInformacion($_POST, $db);
+        // $errores = validarRegistro($_POST);
 
-      $erroresDeImagen = guardarImagen($usuario);
 
-      $errores = array_merge($errores, $erroresDeImagen);
-      
-      if (count($errores) == 0) {
-        guardarUsuario($usuario);
-        session_start();
-        $_SESSION['nombre'] = $_POST['nombre'];
-        header("location: login.php");
-      }
+        if (!isset($errores['nombre'])) {
+          $nombreD = $_POST['nombre'];
+        }
+
+        if (!isset($errores['apellido'])) {
+          $apellidoD = $_POST['apellido'];
+        }
+        if (!isset($errores['email'])) {
+          $emailD = $_POST['email'];
+        }
+
+        if (!isset($error['domicilio'])) {
+          $domicilioD= $_POST['domicilio'];
+        }
+
+        if (count($errores) == 0) {
+          
+          $usuario = new Usuario($_POST['nombre'], $_POST['apellido'], $_POST['email'], $_POST['contrasena'], $_POST['domicilio']);
+
+          //var_dump($usuario); exit;
+          $usuario->guardarImagen($usuario->getEmail());
+          $usuario = $db->guardarUsuario($usuario);
+
+          //var_dump($usuario); exit;
+
+          $auth->login($_POST['email']);
+          header("location: login.php");
+          exit;
+        }
     }
+  
+    //if($auth->loginControl()) {
+    //    header("location: index.php");
+    //}
 
-    $nombreD = $_POST['nombre'];
-    $apellidoD = $_POST['apellido'];
-    $emailD = $_POST['email'];
-    $ciudadD= $_POST['ciudad'];
-
-    if (isset($errores['nombre'])) {
-      $errorNombre = 'error';
-    }
-
-    if (isset($errores['apellido'])) {
-      $errorApellido = 'error';
-    }
-    if (isset($errores['email'])) {
-      $errorMail = 'error';
-    }
-
-    if (isset($errores['contrasena'])) {
-      $errorContrasena = 'error';
-    }
-
-    if (isset($error['ciudad'])) {
-      $errorCiudad = 'error';
-    }
-}
 ?>
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="../css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
-    <title>:: CELL.HOUSE - REGISTRO</title>
-  </head>
+  <?php $pageTitle = ':: Registro - CELL.HOUSE';
+  include_once('componentes/head.php'); ?>
 
   <body>
     
-    <?php include_once('../componentes/header-2.php'); ?>
+    <?php include_once('componentes/header_login.php'); ?>
     
     <div class="box_fill_in">
           <div class="login-user-container">
@@ -106,8 +100,8 @@ if ($_POST) {
                 <label for="clave">Confirmá contraseña:</label>
                 <input placeholder="Confirmá tu clave" type="password" name="contrasena_confirm" id="contrasena_confirm">
                 <br>
-                <label for="ciudad">Domicilio:</label>
-                <input class="<?=$errorCiudad?>" placeholder="Ingresá tu domicilio" type="text" name="ciudad" id="ciudad" value="<?=$ciudadD?>">
+                <label for="domicilio">Domicilio:</label>
+                <input class="<?=$errorDomicilio?>" placeholder="Ingresá tu domicilio" type="text" name="domicilio" id="domicilio" value="<?=$domicilioD?>">
                 <br>
                 <input type="file" name="avatar" id="avatar">
                 <br>

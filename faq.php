@@ -1,18 +1,12 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="../css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
-    <title>:: CELL.HOUSE - PREGUNTAS FRECUENTES</title>
-  </head>
+  <?php $pageTitle = ":: Preguntas Frecuentes - CELL.HOUSE";
+  require_once('componentes/head.php'); ?>
 
   <body>
-    
-    <?php include_once('../componentes/header-2.php'); ?>
+    <?php 
+    include_once('componentes/navigation.php');
+    ?>
 
     <main class="container">
       <section class="container-faq">
@@ -126,7 +120,7 @@
       </section>
     </main>
 
-      <?php include('../componentes/footer-2.php'); ?>
+      <?php include_once('componentes/footer.php'); ?>
 
   </body>
 </html>
