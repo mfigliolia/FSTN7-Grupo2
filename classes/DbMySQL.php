@@ -9,11 +9,11 @@
 
 		public function __construct()
 		{
-			$dsn = 'mysql:host=localhost;dbname=cell;charset=utf8mb4;port=8889';
-			//$dsn = 'mysql:host=localhost;dbname=cell;charset=utf8mb4;port=3306';
+			//$dsn = 'mysql:host=localhost;dbname=cell;charset=utf8mb4;port=8889';
+			$dsn = 'mysql:host=localhost;dbname=cell;charset=utf8mb4;port=3306';
 			$username = "root";
-			$password = "root";
-			//$password = "";
+			//$password = "root";
+			$password = "";
 
 			try {
 				$this->conexion = new PDO($dsn, $username, $password);
